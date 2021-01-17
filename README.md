@@ -1,2 +1,2 @@
-# README
+# Welcome to ARC Labs
 
