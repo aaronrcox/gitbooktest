@@ -7,18 +7,18 @@ description: >-
 
 # Build and deploy C++ for web with Emscripten, Docker and Github Actions
 
-I first started programming around 2004 with C++, OpenGL and SDL. I created all sorts of small little graphical prototypes like particle systems, custom ui libraries, 2d and 3d frameworks, random shader effects, data visualisations, and loads of game prototypes etc... Its the kind of programming i can only describe as pure fun.
+I first started programming around 2004 with C++, OpenGL, and SDL. I created all sorts of small little graphical prototypes like particle systems, custom UI libraries, 2d and 3d frameworks, random shader effects, data visualizations, and loads of game prototypes, etc... It's the kind of programming I can only describe as pure fun.
 
-The problem with all of these projects is that they are closelly tied to Microsoft Visual Studio, and Windows. A release build of the project outputs an \*.exe... fairly standard, But showcaseing these projects is a little awakard. Sure i could show a screenshot and provide a github link... but that's a bit lacking... I'd rather let the internet interact with my projects.
+The problem with all of these projects is that they are closely tied to Microsoft Visual Studio, and Windows. A release build of the project outputs an `*.exe`... Fairly standard, but showcasing these projects is a little awkward. Sure I could show a screenshot and provide a GitHub link... but that's a bit lacking... I'd rather let the internet interact with my projects.
 
 > Please, can you download my susipcious \*.exe
 
-This pretty much sums up my motivation for this post, I'm going to show how we can build and publish  a C++ project to github pages so that it can run within a web browser. 
+This pretty much sums up my motivation for this post, I'm going to show how we can build and publish a C++ project to GitHub pages so that it can run within a web browser. 
 
 ### Goals
 
 * Compile C++ on windows using visual studio 2019
-* Compile C++ with Emscripten for web using Docker
+* Compile C++ with Emscripten for the web using Docker
 * Automate Emscripten build with Github Actions
 * Automate deploy to Github Pages
 
@@ -39,7 +39,7 @@ This tutorial will be broken down into the following steps.
 ### Create a CMake project with Visual Studio <a id="create-a-cmake-project-with-visual-studio"></a>
 
 {% hint style="warning" %}
- **Disclaimer** I’ve very new to CMake, so some setup may be considered less optimal or non-standard. As i learn more i’ll update the tutorial as nescesary.
+ **Disclaimer** I’ve very new to CMake, so some setup may be considered less optimal or non-standard. As I learn more I’ll update the tutorial as necessary.
 {% endhint %}
 
 We can create a CMake project via Visual Studio’s CMake Project Template. There are a few changes that we will make to the default settings based on the following considerations.
@@ -47,7 +47,7 @@ We can create a CMake project via Visual Studio’s CMake Project Template. Ther
 1. Create release configuration
 2. change default build output directory
 3. Change projects location \(so it’s not in root\)
-4. Seperate header and source files into `inc` and `src` directories
+4. Separate header and source files into `inc` and `src` directories
 
 Here’s a quick video to show the steps for creating the CMake project within visual studio.
 
@@ -55,15 +55,15 @@ Here’s a quick video to show the steps for creating the CMake project within v
 
 ### Docker Build with Emscripten <a id="docker-build-with-emscripten"></a>
 
-Now that we have an initial project setup, we are going to build the project with emscriten using a docker container. 
+Now that we have an initial project setup, we are going to build the project with Emscriten using a docker container. 
 
-Watch the video below for a quick walkthrough on how to setup our project, and keep reading for a written explination of the provided scripts.
+Watch the video below for a quick walkthrough on how to set up our project, and keep reading for a written explanation of the provided scripts.
 
 {% embed url="https://www.youtube.com/watch?v=\_SbUqOXf8Cs&feature=emb\_title" %}
 
 ### **Update CMakeLists for Emscripten**
 
-Before we can build with emscripten, there are a few additions neede in our CMakeLists.txt files for our projects to build correctly.
+Before we can build with Emscripten, there are a few additions need in our CMakeLists.txt files for our projects to build correctly.
 
 `EmscritenProjects/CMakeLists.txt` \(root\)  
 Add the following after we define the HelloWorld project
@@ -75,7 +75,7 @@ endif()
 ```
 
 `EmscritenProjects/projects/HelloWorld/CMakeLists.txt`   
-Tell emscripten to output a html file.
+Tell Emscripten to output a HTML file.
 
 ```text
 if(EMSCRIPTEN)
@@ -88,30 +88,30 @@ endif()
 
 ### **Setup Docker Image**
 
-With these changes made to our CMakeLists files, we are ready to setup docker to build our project with emscripten.
+With these changes made to our CMakeLists files, we are ready to setup docker to build our project with Emscripten.
 
 {% hint style="info" %}
-**Docker \(Optional\)**: Installing Docker will be helpfull for local development and testing. Later, we will setup automatic builds with github actions and deploy to github pages.
+**Docker \(Optional\)**: Installing Docker will be helpful for local development and testing. Later, we will set up automatic builds with GitHub actions and deploy them to GitHub pages.
 {% endhint %}
 
-To test locally, install docker for windows. https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+To test locally, install docker for windows.  
+[https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) 
 
 We will need to create 4 files in our project’s root directory:
 
-1. **`Dockerfile:`** This is a text file that will describe a docker image. The Image will contain the build tooling needed for our project. Our Image will use the officially supported emscripten docker image. We will additionally install `ninja-build` which is used by visual studio to generate our projects. And finally, we will run a custom script `dockerbuild.sh` when our docker container runs.
+1. **`Dockerfile:`** This is a text file that will describe a docker image. The Image will contain the build tooling needed for our project. Our Image will use the officially supported Emscripten docker image. We will additionally install**`ninja-build`**which is used by Visual Studio to generate our projects. And finally, we will run a custom script**`dockerbuild.sh`**when our docker container runs.
 
    ```text
    FROM emscripten/emsdk:latest
-    RUN apt update && apt install -y ninja-build
-    CMD ["/bin/sh", "/app/build.sh"]
+   RUN apt update && apt install -y ninja-build
+   CMD ["/bin/sh", "/app/build.sh"]
    ```
 
-2. **`.dockerignore`** When a Dockerfile is built into an image, the file content in the current directory is packaged. so that local files are copied and made available to the docker image. For our purpose, we dont want anything copied into our docker image. We will ignore everything. \(simular to how a gitignore file works\)
+2. **`.dockerignore`** When a Dockerfile is built into an image, the file content in the current directory is packaged. so that local files are copied and made available to the docker image. For our purpose, we don't want anything copied into our docker image. We will ignore everything. \(similar to how a .gitignore file works\)
 
    ```text
     # IGNORE EVERYTHING
     *
- 
    ```
 
 3.  **`build.sh`** A Bash script that runs the commands needed to build our CMake project with the Emscripten toolchain.
@@ -151,23 +151,23 @@ We will need to create 4 files in our project’s root directory:
 
 ### **Build and Run**
 
-Now that the docker files are setup correctly, we can build the project by simply running the `web_build.bat` from command prompt.
+Now that the docker files are set up correctly, we can build the project by simply running the `web_build.bat` from the command prompt.
 
 The output will be located in `/bin/Emscripten/HelloWorld/`
 
-We will need to serve these files from a local web server. I’ve found it easiest to use `Visual Studio Code's` - Live Server extension.
+We will need to serve these files from a local webserver. I’ve found it easiest to use `Visual Studio Code's` - Live Server extension.
 
-And we’re done. you should now see `Hello CMake` within the emscripten terminal within your web browser.
+And we’re done. you should now see `Hello CMake` within the Emscripten terminal within your web browser.
 
 ### Automated Build and Deploy with Github Actions
 
-The Last step is automating our build process with github actions. To achieve this, we will need to create a new empty Repository on Github and push our files to that repo, and define a workflow that can be triggered when we push to the branch.
+The Last step is automating our build process with GitHub actions. To achieve this, we will need to create a new empty Repository on Github and push our files to that repo, and define a workflow that can be triggered when we push to the branch.
 
 Here’s a quick walkthrough for the remaining steps, or continue reading below.
 
 {% embed url="https://www.youtube.com/watch?v=aWw-LFLBlrc&feature=emb\_title" %}
 
-To Get started we will first need to add add a `.gitignore` file to our project.
+To Get started we will first need to add a **`.gitignore`** file to our project.
 
 ```text
 CMakeLists.txt.user
@@ -188,15 +188,15 @@ build/
 out/
 ```
 
- Once you’ve added the `.gitignore` file. we can push our project to github.
+ Once you’ve added the**`.gitignore`**file. we can push our project to GitHub.
 
 ### **Github Actions**
 
-To use github actions, we need to define a workflow file for github. I’m going to create a new workflow file: `./github/workflows/EmscriptenBuildDeploy.yml`
+To use GitHub actions, we need to define a workflow file for GitHub. I’m going to create a new workflow file:`./github/workflows/EmscriptenBuildDeploy.yml`
 
-The folder location here is important, as github will only look in this `.github/workflows/` folder.
+The folder location here is important, as GitHub will only look in this **`.github/workflows/`** folder.
 
-Here’s our yaml file
+Here’s our YAML file
 
 ```yaml
 name: EmscriptenBuildDeploy
@@ -229,9 +229,9 @@ jobs:
 
 ```
 
-With these changes now in place. Push the action to your repo. The Action should automaticly trigger.
+With these changes now in place. Push the action to your repo. The Action should automatically trigger.
 
-You can view the actions progress via the “Actions” navigation tab.
+You can view progress via the “Actions” navigation tab.
 
 ### **Enable Github Pages**
 
@@ -239,5 +239,5 @@ Finally, navigate to your project settings. scroll down to `Github Pages` and ch
 
 ### **Done**
 
-We’re Done. A Simple HelloWorld C++ project Compiled and Deployed to Github pages with Github Actions. Although this was a simple “Hello World” project it has set the ground work for future projects to be created and deployed.
+We’re Done. A Simple HelloWorld C++ project Compiled and Deployed to Github pages with Github Actions. Although this was a simple “Hello World” project it has set the groundwork for future projects to be created and deployed.
 
