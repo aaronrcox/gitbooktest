@@ -1,2 +1,2 @@
-# Tutorials & Mini Courses
+# Tutorials
 

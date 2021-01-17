@@ -1,4 +1,4 @@
-# Welcome to ARC Labs
+# Home
 
 
 
@@ -37,13 +37,13 @@ During my free time when i'm not ranting about coding standards or naming conven
 
 ## Latest Blog Posts
 
+### [How to setup a Remote development workspace with Code-Server on GCP](posts/blog-post-2.md)
+
+the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog  
+[\(read more\)](posts/blog-post-2.md)
+
 ### [Compile and deploy C++ to web with Docker and Github Actions](posts/blog-post-1.md)
 
 In this post, I will show you how I set up a C++ project with CMake and Visual Studio. We will compile to Javascript with Emscripten and Docker. Finally, we will automate the build and deploy with Git  
 [\(read more\)](posts/blog-post-1.md)
-
-### [Blog Post 2](posts/blog-post-2/)
-
-the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog  
-[\(read more\)](posts/blog-post-2/)
 

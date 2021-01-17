@@ -1,19 +1,24 @@
 # Table of contents
 
-* [Welcome to ARC Labs](README.md)
+* [Home](README.md)
+* [Tutorials](courses.md)
 * [Projects](projects.md)
-* [Tutorials & Mini Courses](courses.md)
 * [About](about.md)
 
 ## Posts
 
 * [Compile and deploy C++ to web with Docker and Github Actions](posts/blog-post-1.md)
-* [Blog Post 2](posts/blog-post-2/README.md)
-  * [Nested Page](posts/blog-post-2/nested-page/README.md)
-    * [nested nested](posts/blog-post-2/nested-page/nested-nested.md)
-  * [Another Nested Page](posts/blog-post-2/another-nested-page.md)
+* [How to setup a Remote development workspace with Code-Server on GCP](posts/blog-post-2.md)
+* [Untitled](posts/untitled.md)
+* [Untitled](posts/untitled-1.md)
+* [Untitled](posts/untitled-2.md)
+* [Untitled](posts/untitled-3.md)
 
 ## Mini Courses
 
 * [Learn OpenGL](mini-courses/learn-opengl.md)
+* [Untitled](mini-courses/untitled.md)
+* [Untitled](mini-courses/untitled-1.md)
+* [Untitled](mini-courses/untitled-2.md)
+* [Untitled](mini-courses/untitled-3.md)
 
