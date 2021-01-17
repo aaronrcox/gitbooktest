@@ -2,6 +2,7 @@
 
 * [Welcome to ARC Labs](README.md)
 * [Projects](projects.md)
+* [Tutorials & Mini Courses](courses.md)
 * [About](about.md)
 
 ## Posts
@@ -11,4 +12,8 @@
   * [Nested Page](posts/blog-post-2/nested-page/README.md)
     * [nested nested](posts/blog-post-2/nested-page/nested-nested.md)
   * [Another Nested Page](posts/blog-post-2/another-nested-page.md)
+
+## Mini Courses
+
+* [Learn OpenGL](mini-courses/learn-opengl.md)
 
