@@ -1,5 +1,5 @@
 ---
-description: A Software Engineering Knowlage Base
+description: A Software Engineering Blog
 ---
 
 # ARC LABS
