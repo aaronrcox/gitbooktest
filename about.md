@@ -1,37 +1,34 @@
 # About
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:right"></th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:right">Full Stack Developer
-        <br />Game Programmer
-        <br />Software Engineer
-        <br />Teacher</td>
-      <td style="text-align:left">
-        <p><b>Aaron Cox</b>
-        </p>
-        <p>Programmer (noun) :
-          <br />An Organism that converts caffeen into code</p>
-        <p></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+## **WELCOME TO ARC LABS**
 
-{% hint style="info" %}
-**WELCOME TO ARC LABS**  
-Hello, I'm Aaron, and I've started to blog. Yep I',m using GitBooks as the platform of choice. I'm hoping this will be a simple online space for interesting things, technical things, project updates, howto's and various rants.
+Hello, I'm Aaron, a Software Engineer, Game Programmer, Web Developer, and Teacher. I**'**m addicted to good beer, good coffee, and good code. 
 
-I Currently work for the Academy of Interactive Entertainment as a Games Programming Teacher / Software developer in Sydney Australia. Here i get a chance to convert normal people into a life of insanity consisting of sleepless nights dreaming of code and that one un unsolved problem that keeps us up at night.
+I currently teach programming courses at The Academy of Interactive Entertainment \(Sydney Australia\). Here I get to introduce people to amazing new technologies and skills as they work toward becoming a game programming master.  
+  
+During my free time when I'm not ranting about coding standards or naming conventions, I like to tinker with various technologies, new programming languages, old programming languages, web development, game development, you name it, I've probably played with it. Feel free to check out some of my personal projects, or read through some blog posts
 
-During my free time when i'm not ranting about coding standards or naming conventions, I like to tinker with various technologies, new programming languages, old programming languages, web development, game development, you name it, i've probably played with it.Feel free to check out some of my personal projects, or read through some blog posts
-{% endhint %}
+## Goals and Ideas
+
+### Ideas
+
+* [ ] Create tutorials series on Web development with Docker, Angular, MySql, ASP.net
+* [ ] Create a tutorial series for 2D Game Engine Development with C++ OpenGL, Emscripten.
+* [ ] Create a post talking about Visual studio's performance analysis tools
+* [ ] Create a post about simple MySQL schema upgrade strategies
+* [ ] Create a post about requesting elevated permissions on windows
+
+### Todo
+
+* [ ] Create OpenGL Tutorials
+* [ ] Start programming live Streaming
+* [ ] Create Post for setting up a developer workspace with code-server and GCP
+* [ ] Create a project using GitPod - the browser-based ide
+
+### Done
+
+* [x] Write First Blog Post
+* [x] Create C++ Emscripten Boilerplate project
 
 
 

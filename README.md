@@ -1,49 +1,24 @@
-# Home
+---
+description: A Software Engineering Knowlage Base
+---
 
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:right"></th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:right">Full Stack Developer
-        <br />Game Programmer
-        <br />Software Engineer
-        <br />Teacher</td>
-      <td style="text-align:left">
-        <p><b>Aaron Cox</b>
-        </p>
-        <p>Programmer (noun) :
-          <br />An Organism that converts caffeen into code</p>
-        <p></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+# ARC LABS
 
 {% hint style="info" %}
 **WELCOME TO ARC LABS**  
-Hello, I'm Aaron, and I've started to blog. Yep I',m using GitBooks as the platform of choice. I'm hoping this will be a simple online space for interesting things, technical things, project updates, howto's and various rants.
+Hello, I'm Aaron, a Software Engineer, Game Programmer, Web Developer, and Teacher. I**'**m addicted to good beer, good coffee, and good code. 
 
-I Currently work for the Academy of Interactive Entertainment as a Games Programming Teacher / Software developer in Sydney Australia. Here i get a chance to convert normal people into a life of insanity consisting of sleepless nights dreaming of code and that one un unsolved problem that keeps us up at night.
-
-During my free time when i'm not ranting about coding standards or naming conventions, I like to tinker with various technologies, new programming languages, old programming languages, web development, game development, you name it, i've probably played with it.Feel free to check out some of my personal projects, or read through some blog posts
+I'm hoping this will be a simple online space for interesting things, technical things, project updates, howtos, and various rants.
 {% endhint %}
 
-## Latest Blog Posts
+## Latest Posts
 
-### [How to setup a Remote development workspace with Code-Server on GCP](posts/blog-post-2.md)
+### [Why we should use remote development workspaces!](posts/blog-post-2/)
 
-the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog. the quick brown fox jumps over the lazy dog  
-[\(read more\)](posts/blog-post-2.md)
+In this post, I try to convince you to use a remote development environment for your programming projects. [read more](posts/blog-post-2/)
 
-### [Compile and deploy C++ to web with Docker and Github Actions](posts/blog-post-1.md)
+### [Build and deploy C++ for the web with Emscripten, Docker, and Github Actions](posts/blog-post-1.md)
 
-In this post, I will show you how I set up a C++ project with CMake and Visual Studio. We will compile to Javascript with Emscripten and Docker. Finally, we will automate the build and deploy with Git  
-[\(read more\)](posts/blog-post-1.md)
+In this post, I will show you how I set up a C++ project with CMake and Visual Studio. We will compile to Javascript with Emscripten and Docker. Finally, we will automate our Emscripten build and publish our project to GitHub pages via Github Actions.  
+[read more](posts/blog-post-1.md)
 

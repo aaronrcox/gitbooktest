@@ -1,20 +1,24 @@
 ---
 description: >-
   In this post, I will show you how I set up a C++ project with CMake and Visual
-  Studio. We will compile to Javascript with Emscripten and Docker. Finally, we
+  Studio. We will compile to webasm with Emscripten via Docker and finally, we
   will automate the build and deploy with Git
 ---
 
-# Compile and deploy C++ to web with Docker and Github Actions
+# Build and deploy C++ for web with Emscripten, Docker and Github Actions
 
-In this post, I will show you how I set up a C++ project with CMake and Visual Studio. We will compile to Javascript with Emscripten and Docker. Finally, we will automate the build and deploy with Git.
+I first started programming around 2004 with C++, OpenGL and SDL. I created all sorts of small little graphical prototypes like particle systems, custom ui libraries, 2d and 3d frameworks, random shader effects, data visualisations, and loads of game prototypes etc... Its the kind of programming i can only describe as pure fun.
 
-This is the first post in a series of posts where we will explore C++ and OpenGL.
+The problem with all of these projects is that they are closelly tied to Microsoft Visual Studio, and Windows. A release build of the project outputs an \*.exe... fairly standard, But showcaseing these projects is a little awakard. Sure i could show a screenshot and provide a github link... but that's a bit lacking... I'd rather let the internet interact with my projects.
+
+> Please, can you download my susipcious \*.exe
+
+This pretty much sums up my motivation for this post, I'm going to show how we can build and publish  a C++ project to github pages so that it can run within a web browser. 
 
 ### Goals
 
 * Compile C++ on windows using visual studio 2019
-* Compile with Emscripten for web using Docker
+* Compile C++ with Emscripten for web using Docker
 * Automate Emscripten build with Github Actions
 * Automate deploy to Github Pages
 
