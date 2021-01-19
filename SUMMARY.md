@@ -1,6 +1,7 @@
 # Table of contents
 
 * [ARC LABS](README.md)
+* [Blog](blog.md)
 * [Projects](projects.md)
 * [About](about.md)
 
