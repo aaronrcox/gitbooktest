@@ -1,6 +1,6 @@
 # Why we should use remote development workspaces!
 
-For my work, I tend to move around a lot, every day I'll be working on a different computer, and I'll want to show students and colleges what I've been doing. Typiclly the projects I work on all have a different setup, some will need access to a local SQL server, some might need a Redis DB, some might be running on PHP or need a load balancer, or a variety of different services.
+For my work, I tend to move around a lot, every day I'll be working on a different computer, and I'll want to show students and colleges what I've been doing. Typically the projects I work on all have a different setup, some will need access to a local SQL server, some might need a Redis DB, some might be running on PHP or need a load balancer, or a variety of different services.
 
 Point is, all projects are different. What I really want is to be able to jump on any computer, anywhere, and start coding.
 
@@ -14,32 +14,36 @@ I've found many benefits of having a remote development environment setup.
 
 Today, there are alternative comparable solutions. Though there are some solutions that offer similar features... probably a few more features than cloud9 had too...
 
-* **GitPods**  
+## Remote Development Offerings
 
+### **GitPods**
 
-  > [Gitpod](https://www.gitpod.io/) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. It enables developers to describe their dev environment as code and start instant and fresh development environments for each new task directly from your browser.
+> [Gitpod](https://www.gitpod.io/) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. It enables developers to describe their dev environment as code and start instant and fresh development environments for each new task directly from your browser.
 
-  Gitpod is open source and can be installed on your own servers. They also provide limited free / paid plans for their hosted service. Gitpod is built on top of the Theia IDE project. Its interface shares a lot of similarities with VS Code and is even compatible with most VS Code Extensions.  
+Gitpod is open source and can be installed on your own servers. They also provide limited free / paid plans for their hosted service. Gitpod is built on top of the Theia IDE project. Its interface shares a lot of similarities with VS Code and is even compatible with most VS Code Extensions.  
   
-  Personally, I haven't used GitPod for anything substantial.  
-
-* **Github CodeSpaces** \(private beta\):  
+Personally, I haven't used GitPod for anything substantial.  
 
 
-  > Codespaces is an online development environment, hosted by GitHub and powered by Visual Studio Code, that allows you to develop entirely in the cloud.
+### **Github CodeSpaces**
 
-  CodeSpaces is a closed source project, previously VS Code CodeSpaces was offered by Microsoft, Its now migrating to the GitHub platform. Its currently in beta. Early access can be requested.  
+> Codespaces is an online development environment, hosted by GitHub and powered by Visual Studio Code, that allows you to develop entirely in the cloud.
 
-* **Code-Server:** [available on GitHub](https://github.com/cdr/code-server/tree/master)  
+CodeSpaces is a closed source project, previously VS Code CodeSpaces was offered by Microsoft, Its now migrating to the GitHub platform. Its currently in beta. Early access can be requested.
 
+### **Code-Server**
 
-  > Run VS Code on any machine anywhere and access it in the browser.
+[Available on GitHub](https://github.com/cdr/code-server/tree/master)
 
-  Unlike GitPod and CodeSpaces, Code Server doesn't manage your development environment. It doesn't create new VM's or sandbox your projects. Its goal is simple. Make VS Code available in the browser. It's easy to install on a VM, and you can access it straight away. It can also be installed alongside other services running on the VM. Code server is what I've had the most experience with, though you will need to get a little more familiar with Linux command line and SSH so that you can restart the service if it crashes. Currently, for personal development, I find code-server to be the ideal solution. 
+> Run VS Code on any machine anywhere and access it in the browser.
 
+Unlike GitPod and CodeSpaces, Code Server doesn't manage your development environment. It doesn't create new VM's or sandbox your projects. Its goal is simple. Make VS Code available in the browser. It's easy to install on a VM, and you can access it straight away. It can also be installed alongside other services running on the VM.
 
+Code server is what I've had the most experience with. For personal development, I find code-server to be the ideal solution, I've got access to the full VM, I can use Git, Docker, and any other software I like. Just as if I was developing on my local pc.
 
+## Install Code Server on a GCP VM
 
+So you want to install Code-Server on your own VM? Great! I've written a quick tutorial to show you how to get started.
 
 
 

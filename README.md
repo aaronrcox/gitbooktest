@@ -13,6 +13,10 @@ I'm hoping this will be a simple online space for interesting things, technical 
 
 ## Latest Posts
 
+### [Install Code-Server on a GCP VM](posts/blog-post-2/install-code-server-on-a-gcp-vm.md)
+
+Code-Server provides a VS Code development experience from your web browser. It's like your own personal computer, hosted online, allowing you to hack away at your projects from anywhere, school, works, on your chrome book? In this post, I will show you how to install Code-Server on a GCP Compute Engine Instance \(VM\). You can follow the steps outlined in the post, or watch the video tutorial. [read more](posts/blog-post-2/install-code-server-on-a-gcp-vm.md)
+
 ### [Why we should use remote development workspaces!](posts/blog-post-2/)
 
 In this post, I try to convince you to use a remote development environment for your programming projects. [read more](posts/blog-post-2/)
