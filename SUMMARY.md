@@ -13,5 +13,3 @@
 
 ## Mini Courses
 
-* [Learn OpenGL](mini-courses/learn-opengl.md)
-
