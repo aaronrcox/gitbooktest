@@ -8,19 +8,17 @@ I currently teach programming courses at The Academy of Interactive Entertainmen
   
 During my free time when I'm not ranting about coding standards or naming conventions, I like to tinker with various technologies, new programming languages, old programming languages, web development, game development, you name it, I've probably played with it. Feel free to check out some of my personal projects, or read through some blog posts
 
-## Goals and Ideas
+## Personal Goals and Ideas
 
 ### Ideas
 
 * [ ] Create tutorials series on Web development with Docker, Angular, MySql, ASP.net
-* [ ] Create a tutorial series for 2D Game Engine Development with C++ OpenGL, Emscripten.
 * [ ] Create a post talking about Visual studio's performance analysis tools
 * [ ] Create a post about simple MySQL schema upgrade strategies
 * [ ] Create a post about requesting elevated permissions on windows
 
 ### Todo
 
-* [ ] Create OpenGL Tutorials
 * [ ] Start programming live Streaming
 * [ ] Create Post for setting up a developer workspace with code-server and GCP
 * [ ] Create a project using GitPod - the browser-based ide
