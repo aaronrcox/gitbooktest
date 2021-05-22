@@ -11,5 +11,3 @@
 * [Why we should use remote development workspaces!](posts/blog-post-2.md)
 * [Install Code-Server on a GCP VM](posts/install-code-server-on-a-gcp-vm.md)
 
-## Mini Courses
-
