@@ -9,7 +9,7 @@ description: >-
 
 I first started programming around 2004 with C++, OpenGL, and SDL. I created all sorts of small little graphical prototypes like particle systems, custom UI libraries, 2d and 3d frameworks, random shader effects, data visualizations, and loads of game prototypes, etc... It's the kind of programming I can only describe as pure fun.
 
-The problem with all of these projects is that they are closely tied to Microsoft Visual Studio, and Windows. A release build of the project outputs an `*.exe`... Fairly standard, but showcasing these projects is a little awkward. Sure I could show a screenshot and provide a GitHub link... but that's a bit lacking... I'd rather let the internet interact with my projects.
+The problem with all of these projects is that they are closely tied to Microsoft Visual Studio, and Windows. A release build of the project outputs an `*.exe`... Fairly standard, but showcasing these projects is a little awkward. Sure I could show a screenshot and provide a GitHub link... but that's a bit lacking... I'd rather let the internet people interact with my projects.
 
 > Please, can you download my susipcious \*.exe
 
